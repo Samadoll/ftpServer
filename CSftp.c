@@ -110,6 +110,7 @@ int main(int argc, char **argv) {
     ftp_stru_t new_stru;
     FILE *file_to_send;
     int is_in_pasv = 0;
+    chdir("dir");
     getcwd(init_dir, sizeof(init_dir));
     
     

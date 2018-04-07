@@ -60,7 +60,7 @@ int contains_str(char* src, char* dst) {
 }
 
 int valid_dir(char* buff) {
-	if (starting_str(buff, "./") || contains_str(buff, "../")) {
+	if (starting_str(buff, "./") || contains_str(buff, "../") || contains_str(buff, "..") || starting_str(buff, "..")) {
 		return 0;
 	}
 	return 1;
